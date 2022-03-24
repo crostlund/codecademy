@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 20px auto;
+    /* border: 1px solid #f15a24; */
+}
+
+section {
+    margin: 40px 0;
+    overflow: auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f15a24;
+    color: white;
+    /* text-transform: uppercase; */
+    font-family: 'Rock Salt', cursive;
+    font-size: 2em;
+}
+
+h3 {
+    color: #f15a24;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    font-family: 'Lexend', sans-serif ;
+    font-weight: 300;
+}
+
+.colorleft h3 {
+    text-transform: uppercase;
+}
+
+.colorleft, .colorright {
+    float: left;
+    vertical-align: middle;
+}
+
+.colorleft {
+    padding: 20px;
+    width: 30%;
+    color: white;
+    background-color: #262626;
+    margin-right: 1%;
+}
+
+.colorright {
+    border-left: 2px solid #f15a24;
+    margin-left: 1%;
+    width: 68%;
+}
+
+@media only screen and (max-width: 920px) {
+    .colorleft, .colorright {
+        float: none;
+    }
+    .colorleft {
+        width: 90%;
+    }
+    .colorright {
+        width: 90%;
+        float: right;
+        padding-top: 40px;
+
+    }
+  }
+
+.colorcolumns {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 30%;
+    margin: 0 1%;
+    /* border: 1px solid #f15a24; */
+}
+
+@media only screen and (max-width: 759px) {
+    .colorcolumns {
+        width: 80%;
+        max-width: 400px;
+        padding: 5% 0;
+        margin: 0 2%;
+        /* margin-bottom: 40px; */
+        border-bottom: 1px solid #262626;
+    }
+    
+}
+
+.primarycolor {
+    position: relative;
+    display: block;
+    width: 80%;
+    padding-top: 80%;
+    border-radius: 50%;
+    background-color: #262626;
+    color: white;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: transform 0.3s ease-in;
+}
+
+.primarycolor:hover {
+    transform: scale(1.05);
+}
+.primarycolor:hover .hovertext {
+    display: block;
+    /* color: white; */
+}
+.primarycolor:hover .colortext {
+    display: none;
+}
+/* 
+.primarycolor::after {
+    position: absolute;
+    content: "HELLO";
+    top: 50%;
+    left: 50%;
+    color: transparent;
+    transform: translate(-50%, -50%);
+}
+.primarycolor:hover::after {
+    color: white;
+    z-index: 10;
+}
+ */
+.colortext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.hovertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.colorcolumns p {
+    margin: 0px;
+}
+
+.colorcolumns div div p:first-child {
+    padding-top: 10px;
+}
+
+.color1 {
+    color: #262626;
+}
+.color2 {
+    color: #f15a24;
+}
+.color3 {
+    color: #f9e410;
+}
+.color4 {
+    color: #1b144f;
+}
+.color5 {
+    color: #00ffff;
+}
+.bgcolor1 {
+    background-color: #262626;
+}
+.bgcolor2 {
+    background-color: #f15a24;
+}
+.bgcolor3 {
+    background-color: #f9e410;
+    color: #262626;
+}
+.bgcolor4 {
+    background-color: #1b144f;
+}
+.bgcolor5 {
+    background-color: #00ffff;
+    color: #262626;
+}
+
+.fontsection {
+    position: relative;
+}
+.fontleft {
+    word-wrap: break-word;
+    float: left;
+    width: 68%;
+    padding: 0 2%;
+    border-right: 2px solid #f15a24;
+}
+.fontright {
+    float: left;
+    width: 27%;
+    padding: 0 2%;
+}
+.fontrightgrey {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #262626;
+}
+
+@media only screen and (max-width: 759px) {
+    .fontleft, .fontright {
+        float: none;
+        width: 90%;
+        border: none;
+    }
+    .fontrightgrey {
+        width: 10%;
+        border-left: 2px solid #f15a24;
+    }
+}
+
+.rocksalt p, .rocksalt span {
+    font-family: 'Rock Salt', cursive;
+}
+.rubik p, .rubik span {
+    font-family: 'Rubik', sans-serif;
+}
+.labelle p, .labelle span {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.fontuppercase {
+    text-transform: uppercase;
+}
+
+.font400 p, .font400 span {
+    font-weight: 400;
+}
+.font500 p, .font500 span {
+    font-weight: 500;
+}
+.font700 p, .font700 span {
+    font-weight: 700;
+}
+
